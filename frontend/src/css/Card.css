@@ -1,0 +1,84 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.card-block:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+}
+
+.card-block .sell-button,
+.card-block .buy-button {
+  background-color: transparent;
+  border-radius: 10px;
+  width: 70px;
+  border: 1px solid #76bafa;
+  color: #76bafa;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-block .sell-button:hover,
+.card-block .buy-button:hover {
+  background-color: #76bafa;
+  color: #fff;
+}
+
+.owner-text-card {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.owner-text-card span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #76bafa;
+}
+
+.you-owner {
+  color: #76bafa;
+}

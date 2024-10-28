@@ -1,0 +1,5 @@
+[
+  "constructor(string,int256)",
+  "function cardCount() view returns (int256)",
+  "function name() view returns (string)"
+]

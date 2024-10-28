@@ -1,0 +1,39 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "src/Collection.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8;\n\ncontract Collection {\n  string public name;\n  int public cardCount;\n\n  constructor(string memory _name, int _cardCount) {\n    name = _name;\n    cardCount = _cardCount;\n  }\n}\n"
+    },
+    "src/Main.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8;\n\nimport \"./Collection.sol\";\n\ncontract Main {\n  int private count;\n  mapping(int => Collection) private collections;\n\n  constructor() {\n    count = 0;\n  }\n\n  function createCollection(string calldata name, int cardCount) external {\n    collections[count++] = new Collection(name, cardCount);\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "evmVersion": "paris",
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

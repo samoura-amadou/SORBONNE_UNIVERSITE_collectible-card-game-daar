@@ -1,0 +1,80 @@
+.boosters-head {
+  display: flex;
+  max-width: 1250px;
+  justify-content: flex-start;
+  margin: 0 auto 30px;
+}
+
+.boosters-head h1 {
+  max-width: unset;
+  margin: 0 30px 0 0;
+}
+
+.boosters-head button {
+  margin-left: 50px;
+  background: transparent;
+  color: #76bafa;
+  border: 1px solid #76bafa;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boosters-head button:hover {
+  background: #76bafa;
+  color: #fff;
+}
+
+.not-redeemed {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.booster {
+  width: calc(20% - 20px);
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 355px;
+  border: 1px solid #76bafa;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.booster-image {
+  max-width: 215px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.booster label {
+  display: block;
+  text-align: center;
+}
+
+.redeem-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: #76bafa;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  transition: border-color 0.3s;
+  font-size: 16px;
+}
+
+.booster:hover {
+  background: #76bafa;
+  color: #fff;
+}
+
+.booster:hover .redeem-button {
+  color: #fff;
+}

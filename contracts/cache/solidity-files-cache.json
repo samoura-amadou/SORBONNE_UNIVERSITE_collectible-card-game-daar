@@ -1,0 +1,93 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/ottodpc/Desktop/FAC/DAAR/Cours_3/projet/SORBONNE_UNIVERSITE_collectible-card-game-daar/contracts/src/Collection.sol": {
+      "lastModificationDate": 1730067778861,
+      "contentHash": "b586e2b24c6a3016acc931f05df38ea2",
+      "sourceName": "src/Collection.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "Collection"
+      ]
+    },
+    "/Users/ottodpc/Desktop/FAC/DAAR/Cours_3/projet/SORBONNE_UNIVERSITE_collectible-card-game-daar/contracts/src/Main.sol": {
+      "lastModificationDate": 1730067778861,
+      "contentHash": "a2ff2213af2490a69091fdb1814b59af",
+      "sourceName": "src/Main.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Collection.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "Main"
+      ]
+    }
+  }
+}

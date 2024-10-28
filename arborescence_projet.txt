@@ -1,0 +1,245 @@
+.
+├── README.md
+├── Rapport.pdf
+├── arborescence_projet.txt
+├── backend
+│   ├── dist
+│   │   ├── backend
+│   │   │   └── src
+│   │   │       ├── boosterImages.js
+│   │   │       ├── contract.js
+│   │   │       ├── routes
+│   │   │       │   ├── booster.js
+│   │   │       │   ├── card.js
+│   │   │       │   └── collections.js
+│   │   │       └── server.js
+│   │   ├── frontend
+│   │   │   └── src
+│   │   │       └── contracts.json
+│   │   └── typechain
+│   │       ├── common.js
+│   │       └── src
+│   │           ├── Collection.js
+│   │           ├── Main.js
+│   │           └── index.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   ├── abis
+│   │   │   ├── Collection.json
+│   │   │   ├── ERC165.json
+│   │   │   ├── ERC721.json
+│   │   │   ├── IERC165.json
+│   │   │   ├── IERC721.json
+│   │   │   ├── IERC721Metadata.json
+│   │   │   ├── IERC721Receiver.json
+│   │   │   ├── Main.json
+│   │   │   └── Ownable.json
+│   │   ├── boosterImages.ts
+│   │   ├── contract.ts
+│   │   ├── routes
+│   │   │   ├── booster.ts
+│   │   │   ├── card.ts
+│   │   │   └── collections.ts
+│   │   └── server.ts
+│   ├── tsconfig.json
+│   └── yarn.lock
+├── contracts
+│   ├── artifacts
+│   │   ├── @openzeppelin
+│   │   │   └── contracts
+│   │   │       ├── access
+│   │   │       │   └── Ownable.sol
+│   │   │       │       ├── Ownable.dbg.json
+│   │   │       │       └── Ownable.json
+│   │   │       ├── token
+│   │   │       │   └── ERC721
+│   │   │       │       ├── ERC721.sol
+│   │   │       │       │   ├── ERC721.dbg.json
+│   │   │       │       │   └── ERC721.json
+│   │   │       │       ├── IERC721.sol
+│   │   │       │       │   ├── IERC721.dbg.json
+│   │   │       │       │   └── IERC721.json
+│   │   │       │       ├── IERC721Receiver.sol
+│   │   │       │       │   ├── IERC721Receiver.dbg.json
+│   │   │       │       │   └── IERC721Receiver.json
+│   │   │       │       └── extensions
+│   │   │       │           └── IERC721Metadata.sol
+│   │   │       │               ├── IERC721Metadata.dbg.json
+│   │   │       │               └── IERC721Metadata.json
+│   │   │       └── utils
+│   │   │           ├── Address.sol
+│   │   │           │   ├── Address.dbg.json
+│   │   │           │   └── Address.json
+│   │   │           ├── Context.sol
+│   │   │           │   ├── Context.dbg.json
+│   │   │           │   └── Context.json
+│   │   │           ├── Counters.sol
+│   │   │           │   ├── Counters.dbg.json
+│   │   │           │   └── Counters.json
+│   │   │           ├── Strings.sol
+│   │   │           │   ├── Strings.dbg.json
+│   │   │           │   └── Strings.json
+│   │   │           ├── introspection
+│   │   │           │   ├── ERC165.sol
+│   │   │           │   │   ├── ERC165.dbg.json
+│   │   │           │   │   └── ERC165.json
+│   │   │           │   └── IERC165.sol
+│   │   │           │       ├── IERC165.dbg.json
+│   │   │           │       └── IERC165.json
+│   │   │           └── math
+│   │   │               ├── Math.sol
+│   │   │               │   ├── Math.dbg.json
+│   │   │               │   └── Math.json
+│   │   │               └── SignedMath.sol
+│   │   │                   ├── SignedMath.dbg.json
+│   │   │                   └── SignedMath.json
+│   │   ├── build-info
+│   │   │   └── dfeb23da926302c4d9275963fdabe957.json
+│   │   ├── hardhat
+│   │   │   └── console.sol
+│   │   │       ├── console.dbg.json
+│   │   │       └── console.json
+│   │   └── src
+│   │       ├── Collection.sol
+│   │       │   ├── Collection.dbg.json
+│   │       │   └── Collection.json
+│   │       └── Main.sol
+│   │           ├── Main.dbg.json
+│   │           └── Main.json
+│   ├── cache
+│   │   └── solidity-files-cache.json
+│   ├── deploy
+│   │   └── 01_deploy_pokemon.ts
+│   ├── deployments
+│   │   └── localhost
+│   │       ├── Main.json
+│   │       └── solcInputs
+│   │           └── e97468900279fe036b56cf81d32681ee.json
+│   ├── hardhat.config.ts
+│   ├── lib
+│   │   ├── ethereum
+│   │   │   ├── account.ts
+│   │   │   ├── ens.ts
+│   │   │   ├── mainnet.ts
+│   │   │   └── provider.ts
+│   │   └── ethereum.ts
+│   ├── package.json
+│   ├── src
+│   │   ├── Collection.sol
+│   │   └── Main.sol
+│   ├── tsconfig.json
+│   └── yarn.lock
+├── frontend
+│   ├── fv.png
+│   ├── index.html
+│   ├── logo.jpg
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── assets
+│   │   │   └── fonts
+│   │   │       └── Retro-Gaming.ttf
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.tsx
+│   │   ├── components
+│   │   │   ├── Card.tsx
+│   │   │   ├── CardPopup.tsx
+│   │   │   ├── NavBar.tsx
+│   │   │   └── TextConnection.tsx
+│   │   ├── contracts.json
+│   │   ├── css
+│   │   │   ├── Boosters.css
+│   │   │   ├── Card.css
+│   │   │   ├── CardPopup.css
+│   │   │   ├── Collections.css
+│   │   │   ├── Header.css
+│   │   │   ├── Menu.css
+│   │   │   └── fonts.css
+│   │   ├── img
+│   │   │   └── booster.jpg
+│   │   ├── lib
+│   │   │   ├── ethereum
+│   │   │   │   ├── account.ts
+│   │   │   │   └── provider.ts
+│   │   │   ├── ethereum.ts
+│   │   │   └── main.ts
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   │   ├── Collections.tsx
+│   │   │   ├── Marketplace.tsx
+│   │   │   ├── UserBoosters.tsx
+│   │   │   └── UserCollections.tsx
+│   │   ├── styles.module.css
+│   │   └── vite-env.d.ts
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   ├── vite.config.ts
+│   └── yarn.lock
+├── package-lock.json
+├── package.json
+├── public
+│   └── ganache-config.png
+├── typechain
+│   ├── @openzeppelin
+│   │   ├── contracts
+│   │   │   ├── access
+│   │   │   │   ├── Ownable.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── token
+│   │   │   │   ├── ERC721
+│   │   │   │   │   ├── ERC721.ts
+│   │   │   │   │   ├── IERC721.ts
+│   │   │   │   │   ├── IERC721Receiver.ts
+│   │   │   │   │   ├── extensions
+│   │   │   │   │   │   ├── IERC721Metadata.ts
+│   │   │   │   │   │   └── index.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── index.ts
+│   │   │   └── utils
+│   │   │       ├── index.ts
+│   │   │       └── introspection
+│   │   │           ├── ERC165.ts
+│   │   │           ├── IERC165.ts
+│   │   │           └── index.ts
+│   │   └── index.ts
+│   ├── common.ts
+│   ├── factories
+│   │   ├── @openzeppelin
+│   │   │   ├── contracts
+│   │   │   │   ├── access
+│   │   │   │   │   ├── Ownable__factory.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── token
+│   │   │   │   │   ├── ERC721
+│   │   │   │   │   │   ├── ERC721__factory.ts
+│   │   │   │   │   │   ├── IERC721Receiver__factory.ts
+│   │   │   │   │   │   ├── IERC721__factory.ts
+│   │   │   │   │   │   ├── extensions
+│   │   │   │   │   │   │   ├── IERC721Metadata__factory.ts
+│   │   │   │   │   │   │   └── index.ts
+│   │   │   │   │   │   └── index.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── utils
+│   │   │   │       ├── index.ts
+│   │   │   │       └── introspection
+│   │   │   │           ├── ERC165__factory.ts
+│   │   │   │           ├── IERC165__factory.ts
+│   │   │   │           └── index.ts
+│   │   │   └── index.ts
+│   │   ├── index.ts
+│   │   └── src
+│   │       ├── Collection__factory.ts
+│   │       ├── Main__factory.ts
+│   │       └── index.ts
+│   ├── index.ts
+│   └── src
+│       ├── Collection.ts
+│       ├── Main.ts
+│       └── index.ts
+└── yarn.lock
+
+83 directories, 160 files

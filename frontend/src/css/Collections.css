@@ -1,0 +1,138 @@
+.page-content {
+  color: #fff;
+  font-family: 'RetroGaming', sans-serif;
+  padding-top: 5%;
+}
+
+h1 {
+  max-width: 1250px;
+  margin: 0 auto 20px;
+  font-weight: 900;
+  color: #ffcc00;
+  text-align: center;
+  text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+}
+
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.collection-left {
+  flex: 1;
+  max-width: 15%;
+  padding: 20px;
+  border-right: 2px solid #333;
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.collection-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.collection-left ul li {
+  margin-bottom: 15px;
+}
+
+.collection-left ul li a {
+  color: #76bafa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.collection-left ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000;
+}
+@media (max-width: 768px) {
+  .collection-left {
+    position: static;
+    max-width: 100%;
+    padding: 10px 0;
+    border-right: none;
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .collection-left ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .collection-left ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  .collection-left ul li a {
+    font-size: 14px;
+    padding: 10px;
+    color: #76bafa;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: none;
+  }
+
+  .collection-left ul li a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000;
+  }
+}
+
+.collection-right {
+  flex: 3;
+  max-width: 85%;
+  padding: 20px;
+}
+
+.collection-title {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.collection-count {
+  display: inline-block;
+  background-color: #76bafa;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5em 0.5em;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: 0 0 5px #76bafa, 0 0 10px #76bafa;
+}
+
+.collection-name {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1.2em;
+  color: #ffcc00;
+}
+
+.collection-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #76bafa;
+  text-shadow: 0 0 5px #76bafa, 0 0 15px #76bafa;
+}
